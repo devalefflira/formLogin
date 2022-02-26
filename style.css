@@ -1,0 +1,82 @@
+html {
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(#414345, #232526);
+}
+.loginBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: #1c1c1c;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+}
+.loginBox h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #ffffff;
+    text-align: center;
+}
+.loginBox .userBox {
+    position: relative;
+}
+.loginBox .userBox input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px  solid #ffffff;
+    outline: none;
+    background: transparent;
+}
+.loginBox .userBox label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #ffffff;
+    pointer-events: none;
+    transition: .5s;
+}
+.loginBox .userBox input:focus ~ label,
+.loginBox .userBox input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #808080;
+    font-size: 12px;
+}
+.loginBox form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    border: 1px solid #ffffff;
+}
+.loginBox .userBox img {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -15px;
+    right: 5px;
+    padding: 10px 0;
+    color: #ffffff;
+    cursor: pointer;
+}
